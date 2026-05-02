@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="{{CSS_PATH}}">
+</head>
+<body>
+  <div class="sticker">
+
+    <div class="qr-wrap">
+        <img src="{{qrUrl}}" alt="QR" />
+    </div>
+
+    <div class="body">
+      <div class="codigo-top">{{actRecNro}}</div>
+      <div class="numero-principal">{{ArtCod}}</div>
+      <div class="numero-secundario">{{ActRecUni}}</div>
+
+      <div class="date-block">
+        <span class="date-label">Fecha Ingreso:</span>
+        <span class="date-value">{{ActRecFec}}</span>
+      </div>
+
+      <div class="date-block">
+        <div class="date-label">Vencimiento:</div>
+        <div class="date-value expiry">{{ActRecLotFec}}</div>
+      </div>
+      
+      <!-- Seccion inferior para el nombre del producto -->
+      <div class="product-band">
+        <div class="product-name">{{ArtNom}}</div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
